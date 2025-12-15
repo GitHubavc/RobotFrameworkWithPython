@@ -1,87 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4 (Python 3.14.2 on darwin)" generated="2025-12-15T17:59:07.371454" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4 (Python 3.14.2 on darwin)" generated="2025-12-15T18:35:35.696101" rpa="false" schemaversion="5">
 <suite id="s1" name="PythonProject1" source="/Users/amit/IdeaProjects/PythonProject1">
 <suite id="s1-s1" name="TestCases" source="/Users/amit/IdeaProjects/PythonProject1/TestCases">
-<suite id="s1-s1-s1" name="InputBox" source="/Users/amit/IdeaProjects/PythonProject1/TestCases/InputBox.robot">
-<test id="s1-s1-s1-t1" name="Verify InputBox" line="16">
+<suite id="s1-s1-s1" name="RadioButtonAndCheckBoxes" source="/Users/amit/IdeaProjects/PythonProject1/TestCases/RadioButtonAndCheckBoxes.robot">
+<test id="s1-s1-s1-t1" name="Testing RadioButtons and CheckBoxes" line="17">
 <kw name="Open HomePage And Verify Title">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-12-15T17:59:07.482850" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<msg time="2025-12-15T18:35:35.806453" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-12-15T17:59:07.482644" elapsed="15.635670"/>
+<status status="PASS" start="2025-12-15T18:35:35.806240" elapsed="4.288133"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-12-15T17:59:23.118794" elapsed="0.326154"/>
+<status status="PASS" start="2025-12-15T18:35:40.096060" elapsed="4.651009"/>
 </kw>
 <kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2025-12-15T17:59:23.447928" level="INFO">Page title is 'Automation Testing Practice'.</msg>
+<msg time="2025-12-15T18:35:44.752812" level="INFO">Page title is 'Automation Testing Practice'.</msg>
 <arg>${HOME_PAGE_TITLE}</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2025-12-15T17:59:23.445125" elapsed="0.003031"/>
+<status status="PASS" start="2025-12-15T18:35:44.747300" elapsed="0.005857"/>
 </kw>
-<status status="PASS" start="2025-12-15T17:59:07.482044" elapsed="15.966221"/>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-12-15T18:35:44.753349" elapsed="0.000466"/>
 </kw>
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-12-15T17:59:23.448925" level="INFO">${"name_text"} = id:name</msg>
-<var>${"name_text"}</var>
-<arg>id:name</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-12-15T17:59:23.448386" elapsed="0.000606"/>
+<status status="PASS" start="2025-12-15T18:35:35.805575" elapsed="8.948384"/>
 </kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-12-15T17:59:23.460737" level="INFO">Element 'id:name' is displayed.</msg>
-<arg>${"name_text"}</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-12-15T17:59:23.449112" elapsed="0.011749"/>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2025-12-15T18:35:44.754351" level="INFO">Selecting 'male' from radio button 'gender'.</msg>
+<arg>gender</arg>
+<arg>male</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="PASS" start="2025-12-15T18:35:44.754094" elapsed="6.114772"/>
 </kw>
-<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
-<arg>${"name_text"}</arg>
-<doc>Verifies that element identified by ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-12-15T17:59:23.460985" elapsed="0.011944"/>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2025-12-15T18:35:50.871907" level="INFO">Selecting checkbox 'monday'.</msg>
+<arg>monday</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-15T18:35:50.869817" elapsed="8.110460"/>
 </kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-12-15T17:59:23.473280" level="INFO">Typing text 'Amit Chandran' into text field 'id:name'.</msg>
-<arg>${"name_text"}</arg>
-<arg>Amit Chandran</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-15T17:59:23.473062" elapsed="0.087098"/>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2025-12-15T18:35:58.982529" level="INFO">Selecting checkbox 'tuesday'.</msg>
+<arg>tuesday</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-15T18:35:58.981332" elapsed="8.108880"/>
 </kw>
-<kw name="Get Value" owner="SeleniumLibrary">
-<arg>${"name_text"}</arg>
-<doc>Returns the value attribute of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-15T17:59:23.560357" elapsed="0.007137"/>
+<kw name="Unselect Checkbox" owner="SeleniumLibrary">
+<msg time="2025-12-15T18:36:07.091391" level="INFO">Unselecting checkbox 'monday'.</msg>
+<arg>monday</arg>
+<doc>Removes the selection of checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-15T18:36:07.090782" elapsed="8.098511"/>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-12-15T17:59:28.569393" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-12-15T17:59:23.567653" elapsed="5.001984"/>
-</kw>
-<kw name="Clear Element Text" owner="SeleniumLibrary">
-<arg>${"name_text"}</arg>
-<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-15T17:59:28.569849" elapsed="0.021614"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-12-15T17:59:31.593497" level="INFO">Slept 3 seconds.</msg>
-<arg>3</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-12-15T17:59:28.591846" elapsed="3.002404"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-12-15T17:59:31.594819" elapsed="0.092091"/>
-</kw>
-<status status="PASS" start="2025-12-15T17:59:07.481077" elapsed="24.206077"/>
+<status status="PASS" start="2025-12-15T18:35:35.804676" elapsed="39.385307"/>
 </test>
-<status status="PASS" start="2025-12-15T17:59:07.402502" elapsed="24.286499"/>
+<status status="PASS" start="2025-12-15T18:35:35.726191" elapsed="39.468172"/>
 </suite>
-<status status="PASS" start="2025-12-15T17:59:07.401422" elapsed="24.288742"/>
+<status status="PASS" start="2025-12-15T18:35:35.725104" elapsed="39.473251"/>
 </suite>
-<status status="PASS" start="2025-12-15T17:59:07.374941" elapsed="24.315833"/>
+<status status="PASS" start="2025-12-15T18:35:35.700001" elapsed="39.500623"/>
 </suite>
 <statistics>
 <total>
@@ -92,7 +71,7 @@
 <suite>
 <stat name="PythonProject1" id="s1" pass="1" fail="0" skip="0">PythonProject1</stat>
 <stat name="TestCases" id="s1-s1" pass="1" fail="0" skip="0">PythonProject1.TestCases</stat>
-<stat name="InputBox" id="s1-s1-s1" pass="1" fail="0" skip="0">PythonProject1.TestCases.InputBox</stat>
+<stat name="RadioButtonAndCheckBoxes" id="s1-s1-s1" pass="1" fail="0" skip="0">PythonProject1.TestCases.RadioButtonAndCheckBoxes</stat>
 </suite>
 </statistics>
 <errors>

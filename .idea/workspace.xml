@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="880c303a-8bf4-43e3-b30e-a44cb878a560" name="Changes" comment="Revert &quot;FirstCommit 15Dec2025&quot;&#10;&#10;This reverts commit 14bd3cd3">
-      <change afterPath="$PROJECT_DIR$/TestCases/InputBox.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/TC1.robot" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/Introduction.robot" afterDir="false" />
+    <list default="true" id="880c303a-8bf4-43e3-b30e-a44cb878a560" name="Changes" comment="InputValidations&#10;&#10;This reverts commit 14bd3cd3">
+      <change afterPath="$PROJECT_DIR$/TestCases/RadioButtonAndCheckBoxes.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/results/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/results/log.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/results/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/results/output.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/results/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/results/report.html" afterDir="false" />
@@ -67,6 +65,8 @@
     "Robot Framework.Test Open HomePage (2).executor": "Run",
     "Robot Framework.Test Open HomePage (3).executor": "Run",
     "Robot Framework.Test Open HomePage.executor": "Run",
+    "Robot Framework.Test Testing RadioButtons and CheckBoxes (1).executor": "Run",
+    "Robot Framework.Test Testing RadioButtons and CheckBoxes.executor": "Run",
     "Robot Framework.Test Verify InputBox.executor": "Run",
     "Robot Framework.Test first.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -76,17 +76,17 @@
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
-  <component name="RunManager" selected="Robot Framework.Test Verify InputBox">
-    <configuration name="Test Open HomePage (1)" type="RobotCodeConfigurationType" factoryName="ROBOT_FRAMEWORK_TEST" temporary="true">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Robot Framework.Test Testing RadioButtons and CheckBoxes (1)">
     <configuration name="Test Open HomePage (2)" type="RobotCodeConfigurationType" factoryName="ROBOT_FRAMEWORK_TEST" temporary="true">
       <method v="2" />
     </configuration>
     <configuration name="Test Open HomePage (3)" type="RobotCodeConfigurationType" factoryName="ROBOT_FRAMEWORK_TEST" temporary="true">
       <method v="2" />
     </configuration>
-    <configuration name="Test Open HomePage" type="RobotCodeConfigurationType" factoryName="ROBOT_FRAMEWORK_TEST" temporary="true">
+    <configuration name="Test Testing RadioButtons and CheckBoxes (1)" type="RobotCodeConfigurationType" factoryName="ROBOT_FRAMEWORK_TEST" temporary="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="Test Testing RadioButtons and CheckBoxes" type="RobotCodeConfigurationType" factoryName="ROBOT_FRAMEWORK_TEST" temporary="true">
       <method v="2" />
     </configuration>
     <configuration name="Test Verify InputBox" type="RobotCodeConfigurationType" factoryName="ROBOT_FRAMEWORK_TEST" temporary="true">
@@ -94,11 +94,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Robot Framework.Test Testing RadioButtons and CheckBoxes (1)" />
+        <item itemvalue="Robot Framework.Test Testing RadioButtons and CheckBoxes" />
         <item itemvalue="Robot Framework.Test Verify InputBox" />
         <item itemvalue="Robot Framework.Test Open HomePage (3)" />
         <item itemvalue="Robot Framework.Test Open HomePage (2)" />
-        <item itemvalue="Robot Framework.Test Open HomePage (1)" />
-        <item itemvalue="Robot Framework.Test Open HomePage" />
       </list>
     </recent_temporary>
   </component>
@@ -157,7 +157,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765800382058</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="InputValidations&#10;&#10;This reverts commit 14bd3cd3">
+      <option name="closed" value="true" />
+      <created>1765802044904</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1765802044904</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -174,6 +182,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="FirstCommit 15Dec2025" />
     <MESSAGE value="Revert &quot;FirstCommit 15Dec2025&quot;&#10;&#10;This reverts commit 14bd3cd3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;FirstCommit 15Dec2025&quot;&#10;&#10;This reverts commit 14bd3cd3" />
+    <MESSAGE value="InputValidations&#10;&#10;This reverts commit 14bd3cd3" />
+    <option name="LAST_COMMIT_MESSAGE" value="InputValidations&#10;&#10;This reverts commit 14bd3cd3" />
   </component>
 </project>
