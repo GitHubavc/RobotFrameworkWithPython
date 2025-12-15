@@ -1,66 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4 (Python 3.14.2 on darwin)" generated="2025-12-15T18:35:35.696101" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4 (Python 3.14.2 on darwin)" generated="2025-12-15T18:56:03.802175" rpa="false" schemaversion="5">
 <suite id="s1" name="PythonProject1" source="/Users/amit/IdeaProjects/PythonProject1">
 <suite id="s1-s1" name="TestCases" source="/Users/amit/IdeaProjects/PythonProject1/TestCases">
-<suite id="s1-s1-s1" name="RadioButtonAndCheckBoxes" source="/Users/amit/IdeaProjects/PythonProject1/TestCases/RadioButtonAndCheckBoxes.robot">
-<test id="s1-s1-s1-t1" name="Testing RadioButtons and CheckBoxes" line="17">
+<suite id="s1-s1-s1" name="DropDowns" source="/Users/amit/IdeaProjects/PythonProject1/TestCases/DropDowns.robot">
+<test id="s1-s1-s1-t1" name="Validating DropDowns And Lists" line="17">
 <kw name="Open HomePage And Verify Title">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-12-15T18:35:35.806453" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<msg time="2025-12-15T18:56:03.891687" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-12-15T18:35:35.806240" elapsed="4.288133"/>
+<status status="PASS" start="2025-12-15T18:56:03.891498" elapsed="14.315233"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-12-15T18:35:40.096060" elapsed="4.651009"/>
+<status status="PASS" start="2025-12-15T18:56:18.207248" elapsed="0.313159"/>
 </kw>
 <kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2025-12-15T18:35:44.752812" level="INFO">Page title is 'Automation Testing Practice'.</msg>
+<msg time="2025-12-15T18:56:18.523238" level="INFO">Page title is 'Automation Testing Practice'.</msg>
 <arg>${HOME_PAGE_TITLE}</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2025-12-15T18:35:44.747300" elapsed="0.005857"/>
+<status status="PASS" start="2025-12-15T18:56:18.520583" elapsed="0.002846"/>
 </kw>
 <kw name="Set Selenium Speed" owner="SeleniumLibrary">
-<arg>2</arg>
+<arg>500milliseconds</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" start="2025-12-15T18:35:44.753349" elapsed="0.000466"/>
+<status status="PASS" start="2025-12-15T18:56:18.523536" elapsed="0.000389"/>
 </kw>
-<status status="PASS" start="2025-12-15T18:35:35.805575" elapsed="8.948384"/>
+<status status="PASS" start="2025-12-15T18:56:03.890969" elapsed="14.633076"/>
 </kw>
-<kw name="Select Radio Button" owner="SeleniumLibrary">
-<msg time="2025-12-15T18:35:44.754351" level="INFO">Selecting 'male' from radio button 'gender'.</msg>
-<arg>gender</arg>
-<arg>male</arg>
-<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
-<status status="PASS" start="2025-12-15T18:35:44.754094" elapsed="6.114772"/>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-12-15T18:56:18.524459" level="INFO">Selecting options from selection list 'country' by label Canada.</msg>
+<arg>country</arg>
+<arg>Canada</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-12-15T18:56:18.524152" elapsed="5.165342"/>
 </kw>
-<kw name="Select Checkbox" owner="SeleniumLibrary">
-<msg time="2025-12-15T18:35:50.871907" level="INFO">Selecting checkbox 'monday'.</msg>
-<arg>monday</arg>
-<doc>Selects the checkbox identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-15T18:35:50.869817" elapsed="8.110460"/>
+<kw name="Select From List By Index" owner="SeleniumLibrary">
+<msg time="2025-12-15T18:56:23.689929" level="INFO">Selecting options from selection list 'country' by index 7.</msg>
+<arg>country</arg>
+<arg>7</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="PASS" start="2025-12-15T18:56:23.689698" elapsed="7.717967"/>
 </kw>
-<kw name="Select Checkbox" owner="SeleniumLibrary">
-<msg time="2025-12-15T18:35:58.982529" level="INFO">Selecting checkbox 'tuesday'.</msg>
-<arg>tuesday</arg>
-<doc>Selects the checkbox identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-15T18:35:58.981332" elapsed="8.108880"/>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2025-12-15T18:56:31.409883" level="INFO">Selecting options from selection list 'country' by value germany.</msg>
+<arg>country</arg>
+<arg>germany</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2025-12-15T18:56:31.408713" elapsed="3.617570"/>
 </kw>
-<kw name="Unselect Checkbox" owner="SeleniumLibrary">
-<msg time="2025-12-15T18:36:07.091391" level="INFO">Unselecting checkbox 'monday'.</msg>
-<arg>monday</arg>
-<doc>Removes the selection of checkbox identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-15T18:36:07.090782" elapsed="8.098511"/>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-12-15T18:56:35.028526" level="INFO">Selecting options from selection list 'colors' by label Blue.</msg>
+<arg>colors</arg>
+<arg>Blue</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-12-15T18:56:35.027311" elapsed="5.159874"/>
 </kw>
-<status status="PASS" start="2025-12-15T18:35:35.804676" elapsed="39.385307"/>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-12-15T18:56:40.187745" level="INFO">Selecting options from selection list 'colors' by label Yellow.</msg>
+<arg>colors</arg>
+<arg>Yellow</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-12-15T18:56:40.187439" elapsed="5.155527"/>
+</kw>
+<kw name="Unselect From List By Label" owner="SeleniumLibrary">
+<msg time="2025-12-15T18:56:45.345115" level="INFO">Un-selecting options from selection list 'colors' by label Blue.</msg>
+<arg>colors</arg>
+<arg>Blue</arg>
+<doc>Unselects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-12-15T18:56:45.343907" elapsed="4.648332"/>
+</kw>
+<status status="PASS" start="2025-12-15T18:56:03.889951" elapsed="46.103523"/>
 </test>
-<status status="PASS" start="2025-12-15T18:35:35.726191" elapsed="39.468172"/>
+<status status="PASS" start="2025-12-15T18:56:03.831721" elapsed="46.166681"/>
 </suite>
-<status status="PASS" start="2025-12-15T18:35:35.725104" elapsed="39.473251"/>
+<status status="PASS" start="2025-12-15T18:56:03.830649" elapsed="46.171312"/>
 </suite>
-<status status="PASS" start="2025-12-15T18:35:35.700001" elapsed="39.500623"/>
+<status status="PASS" start="2025-12-15T18:56:03.805872" elapsed="46.197871"/>
 </suite>
 <statistics>
 <total>
@@ -71,7 +88,7 @@
 <suite>
 <stat name="PythonProject1" id="s1" pass="1" fail="0" skip="0">PythonProject1</stat>
 <stat name="TestCases" id="s1-s1" pass="1" fail="0" skip="0">PythonProject1.TestCases</stat>
-<stat name="RadioButtonAndCheckBoxes" id="s1-s1-s1" pass="1" fail="0" skip="0">PythonProject1.TestCases.RadioButtonAndCheckBoxes</stat>
+<stat name="DropDowns" id="s1-s1-s1" pass="1" fail="0" skip="0">PythonProject1.TestCases.DropDowns</stat>
 </suite>
 </statistics>
 <errors>
