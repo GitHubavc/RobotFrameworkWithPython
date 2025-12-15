@@ -5,18 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="880c303a-8bf4-43e3-b30e-a44cb878a560" name="Changes" comment="Revert &quot;FirstCommit 15Dec2025&quot;&#10;&#10;This reverts commit 14bd3cd3">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/RobotFrameworkPythonProject.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/log.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/output.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/report.html" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestCases/InputBox.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestCases/TC1.robot" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/Introduction.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/results/log.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/results/output.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/results/report.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Robot Suite File" />
         <option value="Python Script" />
+        <option value="Robot Suite File" />
       </list>
     </option>
   </component>
@@ -36,22 +30,25 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "GitHubavc"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;GitHubavc&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/GitHubavc/RobotFrameworkWithPython.git",
-    "accountId": "48eac12c-8a3d-4e08-be2f-d3261d1672bf"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/GitHubavc/RobotFrameworkWithPython.git&quot;,
+    &quot;accountId&quot;: &quot;48eac12c-8a3d-4e08-be2f-d3261d1672bf&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="36kKi66jGaUPXLVabwIE2ox8C77" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -68,7 +65,9 @@
     "Robot Framework.Test LoginTest.executor": "Run",
     "Robot Framework.Test Open HomePage (1).executor": "Run",
     "Robot Framework.Test Open HomePage (2).executor": "Run",
+    "Robot Framework.Test Open HomePage (3).executor": "Run",
     "Robot Framework.Test Open HomePage.executor": "Run",
+    "Robot Framework.Test Verify InputBox.executor": "Run",
     "Robot Framework.Test first.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -77,29 +76,29 @@
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
-  <component name="RunManager" selected="Robot Framework.Test Open HomePage (2)">
-    <configuration name="Test LoginTest (1)" type="RobotCodeConfigurationType" factoryName="ROBOT_FRAMEWORK_TEST" temporary="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="Test LoginTest" type="RobotCodeConfigurationType" factoryName="ROBOT_FRAMEWORK_TEST" temporary="true">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Robot Framework.Test Verify InputBox">
     <configuration name="Test Open HomePage (1)" type="RobotCodeConfigurationType" factoryName="ROBOT_FRAMEWORK_TEST" temporary="true">
       <method v="2" />
     </configuration>
     <configuration name="Test Open HomePage (2)" type="RobotCodeConfigurationType" factoryName="ROBOT_FRAMEWORK_TEST" temporary="true">
       <method v="2" />
     </configuration>
+    <configuration name="Test Open HomePage (3)" type="RobotCodeConfigurationType" factoryName="ROBOT_FRAMEWORK_TEST" temporary="true">
+      <method v="2" />
+    </configuration>
     <configuration name="Test Open HomePage" type="RobotCodeConfigurationType" factoryName="ROBOT_FRAMEWORK_TEST" temporary="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="Test Verify InputBox" type="RobotCodeConfigurationType" factoryName="ROBOT_FRAMEWORK_TEST" temporary="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Robot Framework.Test Verify InputBox" />
+        <item itemvalue="Robot Framework.Test Open HomePage (3)" />
         <item itemvalue="Robot Framework.Test Open HomePage (2)" />
         <item itemvalue="Robot Framework.Test Open HomePage (1)" />
         <item itemvalue="Robot Framework.Test Open HomePage" />
-        <item itemvalue="Robot Framework.Test LoginTest (1)" />
-        <item itemvalue="Robot Framework.Test LoginTest" />
       </list>
     </recent_temporary>
   </component>
@@ -150,7 +149,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765799399171</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Revert &quot;FirstCommit 15Dec2025&quot;&#10;&#10;This reverts commit 14bd3cd3">
+      <option name="closed" value="true" />
+      <created>1765800382058</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1765800382058</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

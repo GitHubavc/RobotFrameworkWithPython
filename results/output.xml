@@ -1,99 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4 (Python 3.14.2 on darwin)" generated="2025-12-15T17:35:38.073406" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4 (Python 3.14.2 on darwin)" generated="2025-12-15T17:59:07.371454" rpa="false" schemaversion="5">
 <suite id="s1" name="PythonProject1" source="/Users/amit/IdeaProjects/PythonProject1">
 <suite id="s1-s1" name="TestCases" source="/Users/amit/IdeaProjects/PythonProject1/TestCases">
-<suite id="s1-s1-s1" name="TC1" source="/Users/amit/IdeaProjects/PythonProject1/TestCases/TC1.robot">
-<test id="s1-s1-s1-t1" name="Open HomePage" line="21">
+<suite id="s1-s1-s1" name="InputBox" source="/Users/amit/IdeaProjects/PythonProject1/TestCases/InputBox.robot">
+<test id="s1-s1-s1-t1" name="Verify InputBox" line="16">
+<kw name="Open HomePage And Verify Title">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-12-15T17:35:38.171166" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<msg time="2025-12-15T17:59:07.482850" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-12-15T17:35:38.170872" elapsed="4.746185"/>
+<status status="PASS" start="2025-12-15T17:59:07.482644" elapsed="15.635670"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-12-15T17:35:42.918622" elapsed="6.173982"/>
+<status status="PASS" start="2025-12-15T17:59:23.118794" elapsed="0.326154"/>
 </kw>
 <kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2025-12-15T17:35:49.096135" level="INFO">Page title is 'Automation Testing Practice'.</msg>
+<msg time="2025-12-15T17:59:23.447928" level="INFO">Page title is 'Automation Testing Practice'.</msg>
 <arg>${HOME_PAGE_TITLE}</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2025-12-15T17:35:49.092985" elapsed="0.003407"/>
+<status status="PASS" start="2025-12-15T17:59:23.445125" elapsed="0.003031"/>
 </kw>
-<kw name="EnterTheDetails">
+<status status="PASS" start="2025-12-15T17:59:07.482044" elapsed="15.966221"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-12-15T17:59:23.448925" level="INFO">${"name_text"} = id:name</msg>
+<var>${"name_text"}</var>
+<arg>id:name</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-12-15T17:59:23.448386" elapsed="0.000606"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-12-15T17:59:23.460737" level="INFO">Element 'id:name' is displayed.</msg>
+<arg>${"name_text"}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-15T17:59:23.449112" elapsed="0.011749"/>
+</kw>
+<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
+<arg>${"name_text"}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-12-15T17:59:23.460985" elapsed="0.011944"/>
+</kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-12-15T17:35:49.098164" level="INFO">Typing text 'Amit Chandran' into text field 'xpath://input[@id='name']'.</msg>
-<arg>xpath://input[@id='name']</arg>
+<msg time="2025-12-15T17:59:23.473280" level="INFO">Typing text 'Amit Chandran' into text field 'id:name'.</msg>
+<arg>${"name_text"}</arg>
 <arg>Amit Chandran</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-15T17:35:49.097272" elapsed="0.096548"/>
+<status status="PASS" start="2025-12-15T17:59:23.473062" elapsed="0.087098"/>
 </kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-12-15T17:35:49.194176" level="INFO">Typing text 'amitvchandrantest1@gmail.com' into text field 'xpath://input[@id='email']'.</msg>
-<arg>xpath://input[@id='email']</arg>
-<arg>amitvchandrantest1@gmail.com</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-15T17:35:49.193970" elapsed="0.041038"/>
+<kw name="Get Value" owner="SeleniumLibrary">
+<arg>${"name_text"}</arg>
+<doc>Returns the value attribute of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-15T17:59:23.560357" elapsed="0.007137"/>
 </kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-12-15T17:35:49.235360" level="INFO">Typing text '6755667877' into text field 'xpath://input[@id='phone']'.</msg>
-<arg>xpath://input[@id='phone']</arg>
-<arg>6755667877</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-15T17:35:49.235160" elapsed="0.046695"/>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-12-15T17:59:28.569393" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-12-15T17:59:23.567653" elapsed="5.001984"/>
 </kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-12-15T17:35:49.282365" level="INFO">Typing text 'This is the text area' into text field 'xpath://textarea[@id='textarea']'.</msg>
-<arg>xpath://textarea[@id='textarea']</arg>
-<arg>This is the text area</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-15T17:35:49.282061" elapsed="0.040104"/>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${"name_text"}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-15T17:59:28.569849" elapsed="0.021614"/>
 </kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-12-15T17:35:49.322584" level="INFO">Clicking element 'xpath://input[@id='male']'.</msg>
-<arg>xpath://input[@id='male']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-15T17:35:49.322381" elapsed="0.043422"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-12-15T17:35:49.366184" level="INFO">Clicking element 'xpath://input[@id='sunday']'.</msg>
-<arg>xpath://input[@id='sunday']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-15T17:35:49.365983" elapsed="0.036359"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-12-15T17:35:49.402678" level="INFO">Clicking element 'xpath://input[@id='tuesday']'.</msg>
-<arg>xpath://input[@id='tuesday']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-15T17:35:49.402488" elapsed="0.029560"/>
-</kw>
-<status status="PASS" start="2025-12-15T17:35:49.096738" elapsed="0.335450"/>
-</kw>
-<kw name="Get All Entries" owner="SeleniumLibrary.custom.DropdownKeywords">
-<msg time="2025-12-15T17:35:49.482159" level="INFO">${values} = ['United States', 'Canada', 'United Kingdom', 'Germany', 'France', 'Australia', 'Japan', 'China', 'Brazil', 'India']</msg>
-<var>${values}</var>
-<arg>id=country</arg>
-<doc>Returns all entries from a dropdown as a list.</doc>
-<status status="PASS" start="2025-12-15T17:35:49.432283" elapsed="0.049965"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-12-15T17:35:49.482693" level="INFO">['United States', 'Canada', 'United Kingdom', 'Germany', 'France', 'Australia', 'Japan', 'China', 'Brazil', 'India']</msg>
-<arg>${values}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-12-15T17:35:49.482393" elapsed="0.000356"/>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-12-15T17:59:31.593497" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-12-15T17:59:28.591846" elapsed="3.002404"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-12-15T17:35:49.482823" elapsed="0.080577"/>
+<status status="PASS" start="2025-12-15T17:59:31.594819" elapsed="0.092091"/>
 </kw>
-<status status="PASS" start="2025-12-15T17:35:38.169473" elapsed="11.394147"/>
+<status status="PASS" start="2025-12-15T17:59:07.481077" elapsed="24.206077"/>
 </test>
-<status status="PASS" start="2025-12-15T17:35:38.108674" elapsed="11.456958"/>
+<status status="PASS" start="2025-12-15T17:59:07.402502" elapsed="24.286499"/>
 </suite>
-<status status="PASS" start="2025-12-15T17:35:38.107372" elapsed="11.459966"/>
+<status status="PASS" start="2025-12-15T17:59:07.401422" elapsed="24.288742"/>
 </suite>
-<status status="PASS" start="2025-12-15T17:35:38.077771" elapsed="11.490634"/>
+<status status="PASS" start="2025-12-15T17:59:07.374941" elapsed="24.315833"/>
 </suite>
 <statistics>
 <total>
@@ -104,7 +92,7 @@
 <suite>
 <stat name="PythonProject1" id="s1" pass="1" fail="0" skip="0">PythonProject1</stat>
 <stat name="TestCases" id="s1-s1" pass="1" fail="0" skip="0">PythonProject1.TestCases</stat>
-<stat name="TC1" id="s1-s1-s1" pass="1" fail="0" skip="0">PythonProject1.TestCases.TC1</stat>
+<stat name="InputBox" id="s1-s1-s1" pass="1" fail="0" skip="0">PythonProject1.TestCases.InputBox</stat>
 </suite>
 </statistics>
 <errors>
