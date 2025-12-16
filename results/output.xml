@@ -1,108 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4 (Python 3.14.2 on darwin)" generated="2025-12-16T11:46:29.555724" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4 (Python 3.14.2 on darwin)" generated="2025-12-16T17:55:03.619266" rpa="false" schemaversion="5">
 <suite id="s1" name="PythonProject1" source="/Users/amit/IdeaProjects/PythonProject1">
 <suite id="s1-s1" name="TestCases" source="/Users/amit/IdeaProjects/PythonProject1/TestCases">
-<suite id="s1-s1-s1" name="ImplicitWaitTest" source="/Users/amit/IdeaProjects/PythonProject1/TestCases/ImplicitWaitTest.robot">
-<test id="s1-s1-s1-t1" name="Registration Test and verify the waits" line="29">
-<kw name="Open HomePage And Verify Title">
+<suite id="s1-s1-s1" name="FramesTest" source="/Users/amit/IdeaProjects/PythonProject1/TestCases/FramesTest.robot">
+<test id="s1-s1-s1-t1" name="Registration Test and verify the waits" line="17">
+<kw name="Open the browser and verify Title">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-12-16T11:46:29.669823" level="INFO">Opening browser 'chrome' to base url 'https://demowebshop.tricentis.com/register'.</msg>
-<arg>${URL}</arg>
+<msg time="2025-12-16T17:55:03.726019" level="INFO">Opening browser 'chrome' to base url 'https://demo.automationtesting.in/Frames.html'.</msg>
+<arg>${URL2}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-12-16T11:46:29.669493" elapsed="5.350965"/>
+<status status="PASS" start="2025-12-16T17:55:03.725722" elapsed="3.577403"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-12-16T11:46:35.021408" elapsed="0.325119"/>
+<status status="PASS" start="2025-12-16T17:55:07.303983" elapsed="0.368858"/>
 </kw>
 <kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2025-12-16T11:46:35.350410" level="INFO">Page title is 'Demo Web Shop. Register'.</msg>
-<arg>${HOME_PAGE_TITLE}</arg>
+<msg time="2025-12-16T17:55:07.677034" level="INFO">Page title is 'Frames'.</msg>
+<arg>${HOME_PAGE_TITLE2}</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2025-12-16T11:46:35.346803" elapsed="0.003837"/>
+<status status="PASS" start="2025-12-16T17:55:07.673067" elapsed="0.004221"/>
 </kw>
-<status status="PASS" start="2025-12-16T11:46:29.668837" elapsed="5.681926"/>
+<status status="PASS" start="2025-12-16T17:55:03.725026" elapsed="3.952420"/>
 </kw>
-<kw name="Fill in the Details for Registeration">
-<kw name="Get Selenium Implicit Wait" owner="SeleniumLibrary">
-<msg time="2025-12-16T11:46:35.351398" level="INFO">${IMPLICIT_TIME} = 0 seconds</msg>
-<var>${IMPLICIT_TIME}</var>
-<doc>Gets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2025-12-16T11:46:35.351235" elapsed="0.000214"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${IMPLICIT_TIME}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-12-16T11:46:35.351549" elapsed="0.000349"/>
-</kw>
-<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
-<arg>10 seconds</arg>
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2025-12-16T11:46:35.351981" elapsed="0.000982"/>
-</kw>
-<kw name="Get Selenium Implicit Wait" owner="SeleniumLibrary">
-<msg time="2025-12-16T11:46:35.353203" level="INFO">${IMPLICIT_TIME} = 10 seconds</msg>
-<var>${IMPLICIT_TIME}</var>
-<doc>Gets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2025-12-16T11:46:35.353059" elapsed="0.000200"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${IMPLICIT_TIME}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-12-16T11:46:35.353336" elapsed="0.000202"/>
-</kw>
-<kw name="Select Radio Button" owner="SeleniumLibrary">
-<msg time="2025-12-16T11:46:35.353723" level="INFO">Selecting 'M' from radio button 'Gender'.</msg>
-<arg>Gender</arg>
-<arg>M</arg>
-<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
-<status status="PASS" start="2025-12-16T11:46:35.353613" elapsed="0.042083"/>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2025-12-16T17:55:07.678165" level="INFO">Selecting frame 'name:SingleFrame'.</msg>
+<arg>name:SingleFrame</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2025-12-16T17:55:07.677583" elapsed="0.020590"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-12-16T11:46:35.396407" level="INFO">Typing text 'Amith' into text field 'name:FirstName'.</msg>
-<arg>name:FirstName</arg>
-<arg>Amith</arg>
+<msg time="2025-12-16T17:55:07.698691" level="INFO">Typing text 'How are you ?' into text field 'xpath://input[@type='text']'.</msg>
+<arg>xpath://input[@type='text']</arg>
+<arg>How are you ?</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-16T11:46:35.395902" elapsed="0.089446"/>
+<status status="PASS" start="2025-12-16T17:55:07.698417" elapsed="0.095259"/>
+</kw>
+<kw name="Unselect Frame" owner="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" start="2025-12-16T17:55:07.793825" elapsed="0.000829"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-12-16T17:55:09.796814" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-12-16T17:55:07.794749" elapsed="2.003008"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-12-16T17:55:09.799697" level="INFO">Clicking element 'xpath://a[text()='Iframe with in an Iframe']'.</msg>
+<arg>xpath://a[text()='Iframe with in an Iframe']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-16T17:55:09.798658" elapsed="0.082141"/>
+</kw>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2025-12-16T17:55:09.881151" level="INFO">Selecting frame 'xpath://iframe[@src='MultipleFrames.html']'.</msg>
+<arg>xpath://iframe[@src='MultipleFrames.html']</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2025-12-16T17:55:09.880953" elapsed="0.015100"/>
+</kw>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2025-12-16T17:55:09.896395" level="INFO">Selecting frame 'xpath://iframe[@src='SingleFrame.html']'.</msg>
+<arg>xpath://iframe[@src='SingleFrame.html']</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2025-12-16T17:55:09.896197" elapsed="0.012990"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-12-16T11:46:35.485732" level="INFO">Typing text 'Kumar' into text field 'name:LastName'.</msg>
-<arg>name:LastName</arg>
-<arg>Kumar</arg>
+<msg time="2025-12-16T17:55:09.909505" level="INFO">Typing text 'I am fine !' into text field 'xpath://input[@type='text']'.</msg>
+<arg>xpath://input[@type='text']</arg>
+<arg>I am fine !</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-16T11:46:35.485513" elapsed="0.038047"/>
+<status status="PASS" start="2025-12-16T17:55:09.909318" elapsed="0.042438"/>
 </kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-12-16T11:46:35.523917" level="INFO">Typing text 'avc456@email.com' into text field 'name:Email'.</msg>
-<arg>name:Email</arg>
-<arg>avc456@email.com</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-16T11:46:35.523722" elapsed="0.048552"/>
+<kw name="Unselect Frame" owner="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" start="2025-12-16T17:55:09.951910" elapsed="0.000939"/>
 </kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-12-16T11:46:35.572644" level="INFO">Typing text 'LessTest123' into text field 'name:Password'.</msg>
-<arg>name:Password</arg>
-<arg>LessTest123</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-16T11:46:35.572436" elapsed="0.038420"/>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-12-16T17:55:11.954046" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-12-16T17:55:09.952937" elapsed="2.001567"/>
 </kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-12-16T11:46:35.611182" level="INFO">Typing text 'LessTest123' into text field 'name:ConfirmPassword'.</msg>
-<arg>name:ConfirmPassword</arg>
-<arg>LessTest123</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-16T11:46:35.610998" elapsed="0.035647"/>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2025-12-16T17:55:11.955499" level="INFO">Clicking link 'xpath://a[text()='Practice Site']'.</msg>
+<arg>xpath://a[text()='Practice Site']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-16T17:55:11.954873" elapsed="9.053440"/>
 </kw>
-<status status="PASS" start="2025-12-16T11:46:35.350969" elapsed="0.295804"/>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-12-16T17:55:21.008638" elapsed="0.111910"/>
 </kw>
-<status status="PASS" start="2025-12-16T11:46:29.667804" elapsed="5.979092"/>
+<status status="PASS" start="2025-12-16T17:55:03.724067" elapsed="17.396669"/>
 </test>
-<status status="PASS" start="2025-12-16T11:46:29.586589" elapsed="6.061882"/>
+<status status="PASS" start="2025-12-16T17:55:03.647454" elapsed="17.475234"/>
 </suite>
-<status status="PASS" start="2025-12-16T11:46:29.585293" elapsed="6.064364"/>
+<status status="PASS" start="2025-12-16T17:55:03.646427" elapsed="17.477672"/>
 </suite>
-<status status="PASS" start="2025-12-16T11:46:29.559708" elapsed="6.090604"/>
+<status status="PASS" start="2025-12-16T17:55:03.623149" elapsed="17.502098"/>
 </suite>
 <statistics>
 <total>
@@ -113,7 +109,7 @@
 <suite>
 <stat name="PythonProject1" id="s1" pass="1" fail="0" skip="0">PythonProject1</stat>
 <stat name="TestCases" id="s1-s1" pass="1" fail="0" skip="0">PythonProject1.TestCases</stat>
-<stat name="ImplicitWaitTest" id="s1-s1-s1" pass="1" fail="0" skip="0">PythonProject1.TestCases.ImplicitWaitTest</stat>
+<stat name="FramesTest" id="s1-s1-s1" pass="1" fail="0" skip="0">PythonProject1.TestCases.FramesTest</stat>
 </suite>
 </statistics>
 <errors>
