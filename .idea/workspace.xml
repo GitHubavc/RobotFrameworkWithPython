@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="880c303a-8bf4-43e3-b30e-a44cb878a560" name="Changes" comment="checkboxRadioButtons">
-      <change afterPath="$PROJECT_DIR$/TestCases/DropDowns.robot" afterDir="false" />
+    <list default="true" id="880c303a-8bf4-43e3-b30e-a44cb878a560" name="Changes" comment="dropdownandList">
+      <change afterPath="$PROJECT_DIR$/TestCases/ImplicitWaitTest.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestCases/SpeedTest.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestCases/TimeOutTest.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/results/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/results/log.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/results/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/results/output.xml" afterDir="false" />
@@ -66,6 +68,12 @@
     "Robot Framework.Test Open HomePage (2).executor": "Run",
     "Robot Framework.Test Open HomePage (3).executor": "Run",
     "Robot Framework.Test Open HomePage.executor": "Run",
+    "Robot Framework.Test Registration Test and verify the waits (1).executor": "Run",
+    "Robot Framework.Test Registration Test and verify the waits (2).executor": "Run",
+    "Robot Framework.Test Registration Test and verify the waits (3).executor": "Run",
+    "Robot Framework.Test Registration Test and verify the waits (4).executor": "Run",
+    "Robot Framework.Test Registration Test and verify the waits (5).executor": "Run",
+    "Robot Framework.Test Registration Test and verify the waits.executor": "Run",
     "Robot Framework.Test Testing RadioButtons and CheckBoxes (1).executor": "Run",
     "Robot Framework.Test Testing RadioButtons and CheckBoxes.executor": "Run",
     "Robot Framework.Test Validating DropDowns And Lists.executor": "Run",
@@ -78,29 +86,29 @@
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
-  <component name="RunManager" selected="Robot Framework.Test Validating DropDowns And Lists">
-    <configuration name="Test Open HomePage (3)" type="RobotCodeConfigurationType" factoryName="ROBOT_FRAMEWORK_TEST" temporary="true">
+  <component name="RunManager" selected="Robot Framework.Test Registration Test and verify the waits">
+    <configuration name="Test Registration Test and verify the waits (2)" type="RobotCodeConfigurationType" factoryName="ROBOT_FRAMEWORK_TEST" temporary="true">
       <method v="2" />
     </configuration>
-    <configuration name="Test Testing RadioButtons and CheckBoxes (1)" type="RobotCodeConfigurationType" factoryName="ROBOT_FRAMEWORK_TEST" temporary="true">
+    <configuration name="Test Registration Test and verify the waits (3)" type="RobotCodeConfigurationType" factoryName="ROBOT_FRAMEWORK_TEST" temporary="true">
       <method v="2" />
     </configuration>
-    <configuration name="Test Testing RadioButtons and CheckBoxes" type="RobotCodeConfigurationType" factoryName="ROBOT_FRAMEWORK_TEST" temporary="true">
+    <configuration name="Test Registration Test and verify the waits (4)" type="RobotCodeConfigurationType" factoryName="ROBOT_FRAMEWORK_TEST" temporary="true">
       <method v="2" />
     </configuration>
-    <configuration name="Test Validating DropDowns And Lists" type="RobotCodeConfigurationType" factoryName="ROBOT_FRAMEWORK_TEST" temporary="true">
+    <configuration name="Test Registration Test and verify the waits (5)" type="RobotCodeConfigurationType" factoryName="ROBOT_FRAMEWORK_TEST" temporary="true">
       <method v="2" />
     </configuration>
-    <configuration name="Test Verify InputBox" type="RobotCodeConfigurationType" factoryName="ROBOT_FRAMEWORK_TEST" temporary="true">
+    <configuration name="Test Registration Test and verify the waits" type="RobotCodeConfigurationType" factoryName="ROBOT_FRAMEWORK_TEST" temporary="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Robot Framework.Test Validating DropDowns And Lists" />
-        <item itemvalue="Robot Framework.Test Testing RadioButtons and CheckBoxes (1)" />
-        <item itemvalue="Robot Framework.Test Testing RadioButtons and CheckBoxes" />
-        <item itemvalue="Robot Framework.Test Verify InputBox" />
-        <item itemvalue="Robot Framework.Test Open HomePage (3)" />
+        <item itemvalue="Robot Framework.Test Registration Test and verify the waits" />
+        <item itemvalue="Robot Framework.Test Registration Test and verify the waits (5)" />
+        <item itemvalue="Robot Framework.Test Registration Test and verify the waits (4)" />
+        <item itemvalue="Robot Framework.Test Registration Test and verify the waits (3)" />
+        <item itemvalue="Robot Framework.Test Registration Test and verify the waits (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -175,7 +183,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765804019685</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="dropdownandList">
+      <option name="closed" value="true" />
+      <created>1765805235317</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1765805235317</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -194,6 +210,7 @@
     <MESSAGE value="Revert &quot;FirstCommit 15Dec2025&quot;&#10;&#10;This reverts commit 14bd3cd3" />
     <MESSAGE value="InputValidations&#10;&#10;This reverts commit 14bd3cd3" />
     <MESSAGE value="checkboxRadioButtons" />
-    <option name="LAST_COMMIT_MESSAGE" value="checkboxRadioButtons" />
+    <MESSAGE value="dropdownandList" />
+    <option name="LAST_COMMIT_MESSAGE" value="dropdownandList" />
   </component>
 </project>

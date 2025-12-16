@@ -1,83 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4 (Python 3.14.2 on darwin)" generated="2025-12-15T18:56:03.802175" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4 (Python 3.14.2 on darwin)" generated="2025-12-16T11:46:29.555724" rpa="false" schemaversion="5">
 <suite id="s1" name="PythonProject1" source="/Users/amit/IdeaProjects/PythonProject1">
 <suite id="s1-s1" name="TestCases" source="/Users/amit/IdeaProjects/PythonProject1/TestCases">
-<suite id="s1-s1-s1" name="DropDowns" source="/Users/amit/IdeaProjects/PythonProject1/TestCases/DropDowns.robot">
-<test id="s1-s1-s1-t1" name="Validating DropDowns And Lists" line="17">
+<suite id="s1-s1-s1" name="ImplicitWaitTest" source="/Users/amit/IdeaProjects/PythonProject1/TestCases/ImplicitWaitTest.robot">
+<test id="s1-s1-s1-t1" name="Registration Test and verify the waits" line="29">
 <kw name="Open HomePage And Verify Title">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-12-15T18:56:03.891687" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<msg time="2025-12-16T11:46:29.669823" level="INFO">Opening browser 'chrome' to base url 'https://demowebshop.tricentis.com/register'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-12-15T18:56:03.891498" elapsed="14.315233"/>
+<status status="PASS" start="2025-12-16T11:46:29.669493" elapsed="5.350965"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-12-15T18:56:18.207248" elapsed="0.313159"/>
+<status status="PASS" start="2025-12-16T11:46:35.021408" elapsed="0.325119"/>
 </kw>
 <kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2025-12-15T18:56:18.523238" level="INFO">Page title is 'Automation Testing Practice'.</msg>
+<msg time="2025-12-16T11:46:35.350410" level="INFO">Page title is 'Demo Web Shop. Register'.</msg>
 <arg>${HOME_PAGE_TITLE}</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2025-12-15T18:56:18.520583" elapsed="0.002846"/>
+<status status="PASS" start="2025-12-16T11:46:35.346803" elapsed="0.003837"/>
 </kw>
-<kw name="Set Selenium Speed" owner="SeleniumLibrary">
-<arg>500milliseconds</arg>
-<doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" start="2025-12-15T18:56:18.523536" elapsed="0.000389"/>
+<status status="PASS" start="2025-12-16T11:46:29.668837" elapsed="5.681926"/>
 </kw>
-<status status="PASS" start="2025-12-15T18:56:03.890969" elapsed="14.633076"/>
+<kw name="Fill in the Details for Registeration">
+<kw name="Get Selenium Implicit Wait" owner="SeleniumLibrary">
+<msg time="2025-12-16T11:46:35.351398" level="INFO">${IMPLICIT_TIME} = 0 seconds</msg>
+<var>${IMPLICIT_TIME}</var>
+<doc>Gets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-12-16T11:46:35.351235" elapsed="0.000214"/>
 </kw>
-<kw name="Select From List By Label" owner="SeleniumLibrary">
-<msg time="2025-12-15T18:56:18.524459" level="INFO">Selecting options from selection list 'country' by label Canada.</msg>
-<arg>country</arg>
-<arg>Canada</arg>
-<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<status status="PASS" start="2025-12-15T18:56:18.524152" elapsed="5.165342"/>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${IMPLICIT_TIME}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-12-16T11:46:35.351549" elapsed="0.000349"/>
 </kw>
-<kw name="Select From List By Index" owner="SeleniumLibrary">
-<msg time="2025-12-15T18:56:23.689929" level="INFO">Selecting options from selection list 'country' by index 7.</msg>
-<arg>country</arg>
-<arg>7</arg>
-<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
-<status status="PASS" start="2025-12-15T18:56:23.689698" elapsed="7.717967"/>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10 seconds</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-12-16T11:46:35.351981" elapsed="0.000982"/>
 </kw>
-<kw name="Select From List By Value" owner="SeleniumLibrary">
-<msg time="2025-12-15T18:56:31.409883" level="INFO">Selecting options from selection list 'country' by value germany.</msg>
-<arg>country</arg>
-<arg>germany</arg>
-<doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<status status="PASS" start="2025-12-15T18:56:31.408713" elapsed="3.617570"/>
+<kw name="Get Selenium Implicit Wait" owner="SeleniumLibrary">
+<msg time="2025-12-16T11:46:35.353203" level="INFO">${IMPLICIT_TIME} = 10 seconds</msg>
+<var>${IMPLICIT_TIME}</var>
+<doc>Gets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-12-16T11:46:35.353059" elapsed="0.000200"/>
 </kw>
-<kw name="Select From List By Label" owner="SeleniumLibrary">
-<msg time="2025-12-15T18:56:35.028526" level="INFO">Selecting options from selection list 'colors' by label Blue.</msg>
-<arg>colors</arg>
-<arg>Blue</arg>
-<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<status status="PASS" start="2025-12-15T18:56:35.027311" elapsed="5.159874"/>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${IMPLICIT_TIME}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-12-16T11:46:35.353336" elapsed="0.000202"/>
 </kw>
-<kw name="Select From List By Label" owner="SeleniumLibrary">
-<msg time="2025-12-15T18:56:40.187745" level="INFO">Selecting options from selection list 'colors' by label Yellow.</msg>
-<arg>colors</arg>
-<arg>Yellow</arg>
-<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<status status="PASS" start="2025-12-15T18:56:40.187439" elapsed="5.155527"/>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2025-12-16T11:46:35.353723" level="INFO">Selecting 'M' from radio button 'Gender'.</msg>
+<arg>Gender</arg>
+<arg>M</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="PASS" start="2025-12-16T11:46:35.353613" elapsed="0.042083"/>
 </kw>
-<kw name="Unselect From List By Label" owner="SeleniumLibrary">
-<msg time="2025-12-15T18:56:45.345115" level="INFO">Un-selecting options from selection list 'colors' by label Blue.</msg>
-<arg>colors</arg>
-<arg>Blue</arg>
-<doc>Unselects options from selection list ``locator`` by ``labels``.</doc>
-<status status="PASS" start="2025-12-15T18:56:45.343907" elapsed="4.648332"/>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-16T11:46:35.396407" level="INFO">Typing text 'Amith' into text field 'name:FirstName'.</msg>
+<arg>name:FirstName</arg>
+<arg>Amith</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-16T11:46:35.395902" elapsed="0.089446"/>
 </kw>
-<status status="PASS" start="2025-12-15T18:56:03.889951" elapsed="46.103523"/>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-16T11:46:35.485732" level="INFO">Typing text 'Kumar' into text field 'name:LastName'.</msg>
+<arg>name:LastName</arg>
+<arg>Kumar</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-16T11:46:35.485513" elapsed="0.038047"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-16T11:46:35.523917" level="INFO">Typing text 'avc456@email.com' into text field 'name:Email'.</msg>
+<arg>name:Email</arg>
+<arg>avc456@email.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-16T11:46:35.523722" elapsed="0.048552"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-16T11:46:35.572644" level="INFO">Typing text 'LessTest123' into text field 'name:Password'.</msg>
+<arg>name:Password</arg>
+<arg>LessTest123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-16T11:46:35.572436" elapsed="0.038420"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-16T11:46:35.611182" level="INFO">Typing text 'LessTest123' into text field 'name:ConfirmPassword'.</msg>
+<arg>name:ConfirmPassword</arg>
+<arg>LessTest123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-16T11:46:35.610998" elapsed="0.035647"/>
+</kw>
+<status status="PASS" start="2025-12-16T11:46:35.350969" elapsed="0.295804"/>
+</kw>
+<status status="PASS" start="2025-12-16T11:46:29.667804" elapsed="5.979092"/>
 </test>
-<status status="PASS" start="2025-12-15T18:56:03.831721" elapsed="46.166681"/>
+<status status="PASS" start="2025-12-16T11:46:29.586589" elapsed="6.061882"/>
 </suite>
-<status status="PASS" start="2025-12-15T18:56:03.830649" elapsed="46.171312"/>
+<status status="PASS" start="2025-12-16T11:46:29.585293" elapsed="6.064364"/>
 </suite>
-<status status="PASS" start="2025-12-15T18:56:03.805872" elapsed="46.197871"/>
+<status status="PASS" start="2025-12-16T11:46:29.559708" elapsed="6.090604"/>
 </suite>
 <statistics>
 <total>
@@ -88,7 +113,7 @@
 <suite>
 <stat name="PythonProject1" id="s1" pass="1" fail="0" skip="0">PythonProject1</stat>
 <stat name="TestCases" id="s1-s1" pass="1" fail="0" skip="0">PythonProject1.TestCases</stat>
-<stat name="DropDowns" id="s1-s1-s1" pass="1" fail="0" skip="0">PythonProject1.TestCases.DropDowns</stat>
+<stat name="ImplicitWaitTest" id="s1-s1-s1" pass="1" fail="0" skip="0">PythonProject1.TestCases.ImplicitWaitTest</stat>
 </suite>
 </statistics>
 <errors>
