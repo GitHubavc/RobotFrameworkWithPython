@@ -1,104 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4 (Python 3.14.2 on darwin)" generated="2025-12-16T17:55:03.619266" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4 (Python 3.14.2 on darwin)" generated="2025-12-16T22:13:08.774961" rpa="false" schemaversion="5">
 <suite id="s1" name="PythonProject1" source="/Users/amit/IdeaProjects/PythonProject1">
 <suite id="s1-s1" name="TestCases" source="/Users/amit/IdeaProjects/PythonProject1/TestCases">
-<suite id="s1-s1-s1" name="FramesTest" source="/Users/amit/IdeaProjects/PythonProject1/TestCases/FramesTest.robot">
-<test id="s1-s1-s1-t1" name="Registration Test and verify the waits" line="17">
-<kw name="Open the browser and verify Title">
+<suite id="s1-s1-s1" name="NavigationKeywords" source="/Users/amit/IdeaProjects/PythonProject1/TestCases/NavigationKeywords.robot">
+<test id="s1-s1-s1-t1" name="Navigation Commands" line="15">
+<kw name="Open window and Maximize">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-12-16T17:55:03.726019" level="INFO">Opening browser 'chrome' to base url 'https://demo.automationtesting.in/Frames.html'.</msg>
-<arg>${URL2}</arg>
+<msg time="2025-12-16T22:13:08.861991" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
+<arg>${URL1}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-12-16T17:55:03.725722" elapsed="3.577403"/>
+<status status="PASS" start="2025-12-16T22:13:08.861769" elapsed="2.034693"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-12-16T17:55:07.303983" elapsed="0.368858"/>
+<status status="PASS" start="2025-12-16T22:13:10.896932" elapsed="0.338602"/>
 </kw>
-<kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2025-12-16T17:55:07.677034" level="INFO">Page title is 'Frames'.</msg>
-<arg>${HOME_PAGE_TITLE2}</arg>
-<doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2025-12-16T17:55:07.673067" elapsed="0.004221"/>
+<status status="PASS" start="2025-12-16T22:13:08.861146" elapsed="2.374567"/>
 </kw>
-<status status="PASS" start="2025-12-16T17:55:03.725026" elapsed="3.952420"/>
+<kw name="Get Location" owner="SeleniumLibrary">
+<msg time="2025-12-16T22:13:11.238772" level="INFO">${LOCATION} = https://www.google.com/</msg>
+<var>${LOCATION}</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="PASS" start="2025-12-16T22:13:11.235842" elapsed="0.003139"/>
 </kw>
-<kw name="Select Frame" owner="SeleniumLibrary">
-<msg time="2025-12-16T17:55:07.678165" level="INFO">Selecting frame 'name:SingleFrame'.</msg>
-<arg>name:SingleFrame</arg>
-<doc>Sets frame identified by ``locator`` as the current frame.</doc>
-<status status="PASS" start="2025-12-16T17:55:07.677583" elapsed="0.020590"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-12-16T17:55:07.698691" level="INFO">Typing text 'How are you ?' into text field 'xpath://input[@type='text']'.</msg>
-<arg>xpath://input[@type='text']</arg>
-<arg>How are you ?</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-16T17:55:07.698417" elapsed="0.095259"/>
-</kw>
-<kw name="Unselect Frame" owner="SeleniumLibrary">
-<doc>Sets the main frame as the current frame.</doc>
-<status status="PASS" start="2025-12-16T17:55:07.793825" elapsed="0.000829"/>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${LOCATION}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-12-16T22:13:11.239159" elapsed="0.000636"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-12-16T17:55:09.796814" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-12-16T22:13:13.240911" level="INFO">Slept 2 seconds.</msg>
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-12-16T17:55:07.794749" elapsed="2.003008"/>
+<status status="PASS" start="2025-12-16T22:13:11.239907" elapsed="2.001934"/>
 </kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-12-16T17:55:09.799697" level="INFO">Clicking element 'xpath://a[text()='Iframe with in an Iframe']'.</msg>
-<arg>xpath://a[text()='Iframe with in an Iframe']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-16T17:55:09.798658" elapsed="0.082141"/>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-12-16T22:13:13.243881" level="INFO">Opening browser 'chrome' to base url 'https://www.bing.com/'.</msg>
+<arg>${URL2}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-12-16T22:13:13.242733" elapsed="1.440205"/>
 </kw>
-<kw name="Select Frame" owner="SeleniumLibrary">
-<msg time="2025-12-16T17:55:09.881151" level="INFO">Selecting frame 'xpath://iframe[@src='MultipleFrames.html']'.</msg>
-<arg>xpath://iframe[@src='MultipleFrames.html']</arg>
-<doc>Sets frame identified by ``locator`` as the current frame.</doc>
-<status status="PASS" start="2025-12-16T17:55:09.880953" elapsed="0.015100"/>
+<kw name="Get Location" owner="SeleniumLibrary">
+<msg time="2025-12-16T22:13:14.686962" level="INFO">${LOCATION} = https://www.bing.com/</msg>
+<var>${LOCATION}</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="PASS" start="2025-12-16T22:13:14.683328" elapsed="0.003800"/>
 </kw>
-<kw name="Select Frame" owner="SeleniumLibrary">
-<msg time="2025-12-16T17:55:09.896395" level="INFO">Selecting frame 'xpath://iframe[@src='SingleFrame.html']'.</msg>
-<arg>xpath://iframe[@src='SingleFrame.html']</arg>
-<doc>Sets frame identified by ``locator`` as the current frame.</doc>
-<status status="PASS" start="2025-12-16T17:55:09.896197" elapsed="0.012990"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-12-16T17:55:09.909505" level="INFO">Typing text 'I am fine !' into text field 'xpath://input[@type='text']'.</msg>
-<arg>xpath://input[@type='text']</arg>
-<arg>I am fine !</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-16T17:55:09.909318" elapsed="0.042438"/>
-</kw>
-<kw name="Unselect Frame" owner="SeleniumLibrary">
-<doc>Sets the main frame as the current frame.</doc>
-<status status="PASS" start="2025-12-16T17:55:09.951910" elapsed="0.000939"/>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${LOCATION}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-12-16T22:13:14.687277" elapsed="0.001419"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-12-16T17:55:11.954046" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-12-16T22:13:16.690069" level="INFO">Slept 2 seconds.</msg>
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-12-16T17:55:09.952937" elapsed="2.001567"/>
+<status status="PASS" start="2025-12-16T22:13:14.688802" elapsed="2.001441"/>
 </kw>
-<kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2025-12-16T17:55:11.955499" level="INFO">Clicking link 'xpath://a[text()='Practice Site']'.</msg>
-<arg>xpath://a[text()='Practice Site']</arg>
-<doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-16T17:55:11.954873" elapsed="9.053440"/>
+<kw name="Go Back" owner="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" start="2025-12-16T22:13:16.690422" elapsed="0.037467"/>
 </kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-12-16T17:55:21.008638" elapsed="0.111910"/>
+<kw name="Get Location" owner="SeleniumLibrary">
+<msg time="2025-12-16T22:13:16.741660" level="INFO">${LOCATION} = data:,</msg>
+<var>${LOCATION}</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="PASS" start="2025-12-16T22:13:16.728381" elapsed="0.013375"/>
 </kw>
-<status status="PASS" start="2025-12-16T17:55:03.724067" elapsed="17.396669"/>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${LOCATION}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-12-16T22:13:16.741891" elapsed="0.000359"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-12-16T22:13:18.743411" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-12-16T22:13:16.742329" elapsed="2.001903"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-12-16T22:13:18.744985" elapsed="0.201476"/>
+</kw>
+<status status="PASS" start="2025-12-16T22:13:08.859887" elapsed="10.086749"/>
 </test>
-<status status="PASS" start="2025-12-16T17:55:03.647454" elapsed="17.475234"/>
+<status status="PASS" start="2025-12-16T22:13:08.802473" elapsed="10.145547"/>
 </suite>
-<status status="PASS" start="2025-12-16T17:55:03.646427" elapsed="17.477672"/>
+<status status="PASS" start="2025-12-16T22:13:08.801225" elapsed="10.147983"/>
 </suite>
-<status status="PASS" start="2025-12-16T17:55:03.623149" elapsed="17.502098"/>
+<status status="PASS" start="2025-12-16T22:13:08.778727" elapsed="10.171239"/>
 </suite>
 <statistics>
 <total>
@@ -109,7 +101,7 @@
 <suite>
 <stat name="PythonProject1" id="s1" pass="1" fail="0" skip="0">PythonProject1</stat>
 <stat name="TestCases" id="s1-s1" pass="1" fail="0" skip="0">PythonProject1.TestCases</stat>
-<stat name="FramesTest" id="s1-s1-s1" pass="1" fail="0" skip="0">PythonProject1.TestCases.FramesTest</stat>
+<stat name="NavigationKeywords" id="s1-s1-s1" pass="1" fail="0" skip="0">PythonProject1.TestCases.NavigationKeywords</stat>
 </suite>
 </statistics>
 <errors>
