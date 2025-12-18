@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="880c303a-8bf4-43e3-b30e-a44cb878a560" name="Changes" comment="FramesTesting">
-      <change afterPath="$PROJECT_DIR$/TestCases/NavigationKeywords.robot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestCases/SwitchToMultipleBrowsers.robot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestCases/TabbedWindows.robot" afterDir="false" />
+    <list default="true" id="880c303a-8bf4-43e3-b30e-a44cb878a560" name="Changes" comment="Navigations">
+      <change afterPath="$PROJECT_DIR$/Resources/Resources.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestCases/MouseOperations.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestCases/ScrollingPage.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestCases/UserKeywords.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/results/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/results/log.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/results/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/results/output.xml" afterDir="false" />
@@ -75,12 +76,19 @@
     "Robot Framework.Test Registration Test and verify the waits (4).executor": "Run",
     "Robot Framework.Test Registration Test and verify the waits (5).executor": "Run",
     "Robot Framework.Test Registration Test and verify the waits.executor": "Run",
+    "Robot Framework.Test Scrolling Page Validation.executor": "Run",
     "Robot Framework.Test Tabbed Window Test.executor": "Run",
     "Robot Framework.Test Testing RadioButtons and CheckBoxes (1).executor": "Run",
     "Robot Framework.Test Testing RadioButtons and CheckBoxes.executor": "Run",
+    "Robot Framework.Test User Defined Keyword (1).executor": "Run",
+    "Robot Framework.Test User Defined Keyword (2).executor": "Run",
+    "Robot Framework.Test User Defined Keyword (3).executor": "Run",
+    "Robot Framework.Test User Defined Keyword (4).executor": "Run",
+    "Robot Framework.Test User Defined Keyword.executor": "Run",
     "Robot Framework.Test Validate Multiple window switching.executor": "Run",
     "Robot Framework.Test Validating DropDowns And Lists.executor": "Run",
     "Robot Framework.Test Verify InputBox.executor": "Run",
+    "Robot Framework.Test Verify Mouse actions.executor": "Run",
     "Robot Framework.Test first.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -89,29 +97,29 @@
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
-  <component name="RunManager" selected="Robot Framework.Test Navigation Commands">
-    <configuration name="Test Navigation Commands" type="RobotCodeConfigurationType" factoryName="ROBOT_FRAMEWORK_TEST" temporary="true">
+  <component name="RunManager" selected="Robot Framework.Test Scrolling Page Validation">
+    <configuration name="Test Scrolling Page Validation" type="RobotCodeConfigurationType" factoryName="ROBOT_FRAMEWORK_TEST" temporary="true">
       <method v="2" />
     </configuration>
-    <configuration name="Test Registration Test and verify the waits (2)" type="RobotCodeConfigurationType" factoryName="ROBOT_FRAMEWORK_TEST" temporary="true">
+    <configuration name="Test User Defined Keyword (1)" type="RobotCodeConfigurationType" factoryName="ROBOT_FRAMEWORK_TEST" temporary="true">
       <method v="2" />
     </configuration>
-    <configuration name="Test Registration Test and verify the waits (3)" type="RobotCodeConfigurationType" factoryName="ROBOT_FRAMEWORK_TEST" temporary="true">
+    <configuration name="Test User Defined Keyword (2)" type="RobotCodeConfigurationType" factoryName="ROBOT_FRAMEWORK_TEST" temporary="true">
       <method v="2" />
     </configuration>
-    <configuration name="Test Tabbed Window Test" type="RobotCodeConfigurationType" factoryName="ROBOT_FRAMEWORK_TEST" temporary="true">
+    <configuration name="Test User Defined Keyword (3)" type="RobotCodeConfigurationType" factoryName="ROBOT_FRAMEWORK_TEST" temporary="true">
       <method v="2" />
     </configuration>
-    <configuration name="Test Validate Multiple window switching" type="RobotCodeConfigurationType" factoryName="ROBOT_FRAMEWORK_TEST" temporary="true">
+    <configuration name="Test User Defined Keyword (4)" type="RobotCodeConfigurationType" factoryName="ROBOT_FRAMEWORK_TEST" temporary="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Robot Framework.Test Navigation Commands" />
-        <item itemvalue="Robot Framework.Test Validate Multiple window switching" />
-        <item itemvalue="Robot Framework.Test Tabbed Window Test" />
-        <item itemvalue="Robot Framework.Test Registration Test and verify the waits (3)" />
-        <item itemvalue="Robot Framework.Test Registration Test and verify the waits (2)" />
+        <item itemvalue="Robot Framework.Test Scrolling Page Validation" />
+        <item itemvalue="Robot Framework.Test User Defined Keyword (4)" />
+        <item itemvalue="Robot Framework.Test User Defined Keyword (3)" />
+        <item itemvalue="Robot Framework.Test User Defined Keyword (2)" />
+        <item itemvalue="Robot Framework.Test User Defined Keyword (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -210,7 +218,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765887953550</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Navigations">
+      <option name="closed" value="true" />
+      <created>1765903467276</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1765903467276</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -232,6 +248,7 @@
     <MESSAGE value="dropdownandList" />
     <MESSAGE value="WaitsTesting" />
     <MESSAGE value="FramesTesting" />
-    <option name="LAST_COMMIT_MESSAGE" value="FramesTesting" />
+    <MESSAGE value="Navigations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Navigations" />
   </component>
 </project>

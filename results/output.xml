@@ -1,96 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4 (Python 3.14.2 on darwin)" generated="2025-12-16T22:13:08.774961" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4 (Python 3.14.2 on darwin)" generated="2025-12-18T18:45:52.155433" rpa="false" schemaversion="5">
 <suite id="s1" name="PythonProject1" source="/Users/amit/IdeaProjects/PythonProject1">
 <suite id="s1-s1" name="TestCases" source="/Users/amit/IdeaProjects/PythonProject1/TestCases">
-<suite id="s1-s1-s1" name="NavigationKeywords" source="/Users/amit/IdeaProjects/PythonProject1/TestCases/NavigationKeywords.robot">
-<test id="s1-s1-s1-t1" name="Navigation Commands" line="15">
-<kw name="Open window and Maximize">
+<suite id="s1-s1-s1" name="ScrollingPage" source="/Users/amit/IdeaProjects/PythonProject1/TestCases/ScrollingPage.robot">
+<test id="s1-s1-s1-t1" name="Scrolling Page Validation" line="10">
+<kw name="Launch Browse Maximize and Return Title" owner="Resources">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-12-16T22:13:08.861991" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
-<arg>${URL1}</arg>
-<arg>${BROWSER}</arg>
+<msg time="2025-12-18T18:45:52.243205" level="INFO">Opening browser 'chrome' to base url 'https://www.countries-ofthe-world.com/flags-of-the-world.html'.</msg>
+<arg>${appUrl}</arg>
+<arg>${appBrowser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-12-16T22:13:08.861769" elapsed="2.034693"/>
+<status status="PASS" start="2025-12-18T18:45:52.243020" elapsed="1.835372"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-12-16T22:13:10.896932" elapsed="0.338602"/>
+<status status="PASS" start="2025-12-18T18:45:54.079943" elapsed="17.206894"/>
 </kw>
-<status status="PASS" start="2025-12-16T22:13:08.861146" elapsed="2.374567"/>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2025-12-18T18:46:11.293281" level="INFO">${title} = Country flags of the world with images and names</msg>
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2025-12-18T18:46:11.287321" elapsed="0.006311"/>
 </kw>
-<kw name="Get Location" owner="SeleniumLibrary">
-<msg time="2025-12-16T22:13:11.238772" level="INFO">${LOCATION} = https://www.google.com/</msg>
-<var>${LOCATION}</var>
-<doc>Returns the current browser window URL.</doc>
-<status status="PASS" start="2025-12-16T22:13:11.235842" elapsed="0.003139"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${LOCATION}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-12-16T22:13:11.239159" elapsed="0.000636"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-12-16T22:13:13.240911" level="INFO">Slept 2 seconds.</msg>
-<arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-12-16T22:13:11.239907" elapsed="2.001934"/>
-</kw>
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-12-16T22:13:13.243881" level="INFO">Opening browser 'chrome' to base url 'https://www.bing.com/'.</msg>
-<arg>${URL2}</arg>
+<return>
+<value>${title}</value>
+<status status="PASS" start="2025-12-18T18:46:11.293870" elapsed="0.000626"/>
+</return>
+<msg time="2025-12-18T18:46:11.294949" level="INFO">${PageTitle} = Country flags of the world with images and names</msg>
+<var>${PageTitle}</var>
+<arg>${URL}</arg>
 <arg>${BROWSER}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-12-16T22:13:13.242733" elapsed="1.440205"/>
-</kw>
-<kw name="Get Location" owner="SeleniumLibrary">
-<msg time="2025-12-16T22:13:14.686962" level="INFO">${LOCATION} = https://www.bing.com/</msg>
-<var>${LOCATION}</var>
-<doc>Returns the current browser window URL.</doc>
-<status status="PASS" start="2025-12-16T22:13:14.683328" elapsed="0.003800"/>
+<status status="PASS" start="2025-12-18T18:45:52.242365" elapsed="19.052741"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>${LOCATION}</arg>
+<arg>${PageTitle}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-12-16T22:13:14.687277" elapsed="0.001419"/>
+<status status="PASS" start="2025-12-18T18:46:11.295438" elapsed="0.000888"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-12-18T18:46:11.297292" level="INFO">Executing JavaScript:
+window.scrollTo(0,document.body.scrollHeight)
+Without any arguments.</msg>
+<arg>window.scrollTo(0,document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-12-18T18:46:11.296581" elapsed="0.007804"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-12-16T22:13:16.690069" level="INFO">Slept 2 seconds.</msg>
-<arg>2</arg>
+<msg time="2025-12-18T18:46:16.306795" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-12-16T22:13:14.688802" elapsed="2.001441"/>
+<status status="PASS" start="2025-12-18T18:46:11.304716" elapsed="5.002530"/>
 </kw>
-<kw name="Go Back" owner="SeleniumLibrary">
-<doc>Simulates the user clicking the back button on their browser.</doc>
-<status status="PASS" start="2025-12-16T22:13:16.690422" elapsed="0.037467"/>
-</kw>
-<kw name="Get Location" owner="SeleniumLibrary">
-<msg time="2025-12-16T22:13:16.741660" level="INFO">${LOCATION} = data:,</msg>
-<var>${LOCATION}</var>
-<doc>Returns the current browser window URL.</doc>
-<status status="PASS" start="2025-12-16T22:13:16.728381" elapsed="0.013375"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${LOCATION}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-12-16T22:13:16.741891" elapsed="0.000359"/>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-12-18T18:46:16.308903" level="INFO">Executing JavaScript:
+window.scrollTo(0,-document.body.scrollHeight)
+Without any arguments.</msg>
+<arg>window.scrollTo(0,-document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-12-18T18:46:16.307677" elapsed="0.010760"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-12-16T22:13:18.743411" level="INFO">Slept 2 seconds.</msg>
-<arg>2</arg>
+<msg time="2025-12-18T18:46:21.321180" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-12-16T22:13:16.742329" elapsed="2.001903"/>
+<status status="PASS" start="2025-12-18T18:46:16.318785" elapsed="5.003140"/>
 </kw>
-<kw name="Close All Browsers" owner="SeleniumLibrary">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2025-12-16T22:13:18.744985" elapsed="0.201476"/>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-12-18T18:46:21.322709" elapsed="0.104515"/>
 </kw>
-<status status="PASS" start="2025-12-16T22:13:08.859887" elapsed="10.086749"/>
+<status status="PASS" start="2025-12-18T18:45:52.241539" elapsed="29.185971"/>
 </test>
-<status status="PASS" start="2025-12-16T22:13:08.802473" elapsed="10.145547"/>
+<status status="PASS" start="2025-12-18T18:45:52.183208" elapsed="29.245976"/>
 </suite>
-<status status="PASS" start="2025-12-16T22:13:08.801225" elapsed="10.147983"/>
+<status status="PASS" start="2025-12-18T18:45:52.182166" elapsed="29.247954"/>
 </suite>
-<status status="PASS" start="2025-12-16T22:13:08.778727" elapsed="10.171239"/>
+<status status="PASS" start="2025-12-18T18:45:52.160643" elapsed="29.270173"/>
 </suite>
 <statistics>
 <total>
@@ -101,7 +86,7 @@
 <suite>
 <stat name="PythonProject1" id="s1" pass="1" fail="0" skip="0">PythonProject1</stat>
 <stat name="TestCases" id="s1-s1" pass="1" fail="0" skip="0">PythonProject1.TestCases</stat>
-<stat name="NavigationKeywords" id="s1-s1-s1" pass="1" fail="0" skip="0">PythonProject1.TestCases.NavigationKeywords</stat>
+<stat name="ScrollingPage" id="s1-s1-s1" pass="1" fail="0" skip="0">PythonProject1.TestCases.ScrollingPage</stat>
 </suite>
 </statistics>
 <errors>
