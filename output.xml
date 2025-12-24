@@ -1,92 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4 (Python 3.14.2 on darwin)" generated="2025-12-15T16:26:15.105721" rpa="false" schemaversion="5">
-<suite id="s1" name="TC1" source="/Users/amit/IdeaProjects/PythonProject1/TestCases/TC1.robot">
-<test id="s1-t1" name="Open HomePage" line="10">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-12-15T16:26:15.205848" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
-<arg>${URL}</arg>
-<arg>${BROWSER}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-12-15T16:26:15.205694" elapsed="10.532003"/>
+<robot generator="Robot 7.4 (Python 3.14.2 on darwin)" generated="2025-12-24T12:28:41.036246" rpa="false" schemaversion="5">
+<suite id="s1" name="TaggingRobot" source="/Users/amit/IdeaProjects/PythonProject1/TestCases/TaggingRobot.robot">
+<test id="s1-t1" name="TC2 Login Test" line="12">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>This is user login test</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-12-24T12:28:41.051181" elapsed="0.000154"/>
 </kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-12-15T16:26:25.738230" elapsed="0.314411"/>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>user login test is over</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-12-24T12:28:41.051418" elapsed="0.000108"/>
 </kw>
-<kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2025-12-15T16:26:26.062154" level="INFO">Page title is 'Automation Testing Practice'.</msg>
-<arg>${HOME_PAGE_TITLE}</arg>
-<doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2025-12-15T16:26:26.052804" elapsed="0.009433"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-12-15T16:26:26.062687" level="INFO">Typing text 'Amit Chandran' into text field 'xpath://input[@id='name']'.</msg>
-<arg>xpath://input[@id='name']</arg>
-<arg>Amit Chandran</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-15T16:26:26.062380" elapsed="0.100053"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-12-15T16:26:26.162760" level="INFO">Typing text 'amitvchandrantest1@gmail.com' into text field 'xpath://input[@id='email']'.</msg>
-<arg>xpath://input[@id='email']</arg>
-<arg>amitvchandrantest1@gmail.com</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-15T16:26:26.162590" elapsed="0.040296"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-12-15T16:26:26.203170" level="INFO">Typing text '6755667877' into text field 'xpath://input[@id='phone']'.</msg>
-<arg>xpath://input[@id='phone']</arg>
-<arg>6755667877</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-15T16:26:26.203036" elapsed="0.043454"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-12-15T16:26:26.246773" level="INFO">Typing text 'This is the text area' into text field 'xpath://textarea[@id='textarea']'.</msg>
-<arg>xpath://textarea[@id='textarea']</arg>
-<arg>This is the text area</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-15T16:26:26.246632" elapsed="0.037958"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-12-15T16:26:26.285014" level="INFO">Clicking element 'xpath://input[@id='male']'.</msg>
-<arg>xpath://input[@id='male']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-15T16:26:26.284858" elapsed="0.034675"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-12-15T16:26:26.319829" level="INFO">Clicking element 'xpath://input[@id='sunday']'.</msg>
-<arg>xpath://input[@id='sunday']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-15T16:26:26.319685" elapsed="0.036813"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-12-15T16:26:26.356820" level="INFO">Clicking element 'xpath://input[@id='tuesday']'.</msg>
-<arg>xpath://input[@id='tuesday']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-15T16:26:26.356669" elapsed="0.030599"/>
-</kw>
-<kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2025-12-15T16:26:26.387568" level="INFO">Clicking link 'xpath://a[text()='Udemy Courses']'.</msg>
-<arg>xpath://a[text()='Udemy Courses']</arg>
-<doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-15T16:26:26.387424" elapsed="5.326813"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-12-15T16:26:31.714432" elapsed="0.091832"/>
-</kw>
-<status status="PASS" start="2025-12-15T16:26:15.205169" elapsed="16.601270"/>
+<tag>sanity</tag>
+<status status="PASS" start="2025-12-24T12:28:41.050817" elapsed="0.000776"/>
 </test>
-<status status="PASS" start="2025-12-15T16:26:15.106314" elapsed="16.700456"/>
+<test id="s1-t2" name="TC4 Logout Test" line="22">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>This is user Logout test</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-12-24T12:28:41.051879" elapsed="0.000123"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>user Logout test is over</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-12-24T12:28:41.052059" elapsed="0.000095"/>
+</kw>
+<tag>sanity</tag>
+<status status="PASS" start="2025-12-24T12:28:41.051737" elapsed="0.000475"/>
+</test>
+<status status="PASS" start="2025-12-24T12:28:41.037115" elapsed="0.015284"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
+<stat pass="2" fail="0" skip="0">sanity</stat>
 </tag>
 <suite>
-<stat name="TC1" id="s1" pass="1" fail="0" skip="0">TC1</stat>
+<stat name="TaggingRobot" id="s1" pass="2" fail="0" skip="0">TaggingRobot</stat>
 </suite>
 </statistics>
 <errors>

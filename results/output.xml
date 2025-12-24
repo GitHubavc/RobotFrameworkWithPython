@@ -1,81 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4 (Python 3.14.2 on darwin)" generated="2025-12-18T18:45:52.155433" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4 (Python 3.14.2 on darwin)" generated="2025-12-24T12:22:00.349840" rpa="false" schemaversion="5">
 <suite id="s1" name="PythonProject1" source="/Users/amit/IdeaProjects/PythonProject1">
 <suite id="s1-s1" name="TestCases" source="/Users/amit/IdeaProjects/PythonProject1/TestCases">
-<suite id="s1-s1-s1" name="ScrollingPage" source="/Users/amit/IdeaProjects/PythonProject1/TestCases/ScrollingPage.robot">
-<test id="s1-s1-s1-t1" name="Scrolling Page Validation" line="10">
-<kw name="Launch Browse Maximize and Return Title" owner="Resources">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-12-18T18:45:52.243205" level="INFO">Opening browser 'chrome' to base url 'https://www.countries-ofthe-world.com/flags-of-the-world.html'.</msg>
-<arg>${appUrl}</arg>
-<arg>${appBrowser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-12-18T18:45:52.243020" elapsed="1.835372"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-12-18T18:45:54.079943" elapsed="17.206894"/>
-</kw>
-<kw name="Get Title" owner="SeleniumLibrary">
-<msg time="2025-12-18T18:46:11.293281" level="INFO">${title} = Country flags of the world with images and names</msg>
-<var>${title}</var>
-<doc>Returns the title of the current page.</doc>
-<status status="PASS" start="2025-12-18T18:46:11.287321" elapsed="0.006311"/>
-</kw>
-<return>
-<value>${title}</value>
-<status status="PASS" start="2025-12-18T18:46:11.293870" elapsed="0.000626"/>
-</return>
-<msg time="2025-12-18T18:46:11.294949" level="INFO">${PageTitle} = Country flags of the world with images and names</msg>
-<var>${PageTitle}</var>
-<arg>${URL}</arg>
-<arg>${BROWSER}</arg>
-<status status="PASS" start="2025-12-18T18:45:52.242365" elapsed="19.052741"/>
+<suite id="s1-s1-s1" name="TaggingRobot" source="/Users/amit/IdeaProjects/PythonProject1/TestCases/TaggingRobot.robot">
+<test id="s1-s1-s1-t1" name="TC2 Login Test" line="11">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>This is user login test</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-12-24T12:22:00.376878" elapsed="0.000324"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>${PageTitle}</arg>
+<arg>user login test is over</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-12-18T18:46:11.295438" elapsed="0.000888"/>
+<status status="PASS" start="2025-12-24T12:22:00.377311" elapsed="0.000165"/>
 </kw>
-<kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2025-12-18T18:46:11.297292" level="INFO">Executing JavaScript:
-window.scrollTo(0,document.body.scrollHeight)
-Without any arguments.</msg>
-<arg>window.scrollTo(0,document.body.scrollHeight)</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2025-12-18T18:46:11.296581" elapsed="0.007804"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-12-18T18:46:16.306795" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-12-18T18:46:11.304716" elapsed="5.002530"/>
-</kw>
-<kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2025-12-18T18:46:16.308903" level="INFO">Executing JavaScript:
-window.scrollTo(0,-document.body.scrollHeight)
-Without any arguments.</msg>
-<arg>window.scrollTo(0,-document.body.scrollHeight)</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2025-12-18T18:46:16.307677" elapsed="0.010760"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-12-18T18:46:21.321180" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-12-18T18:46:16.318785" elapsed="5.003140"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-12-18T18:46:21.322709" elapsed="0.104515"/>
-</kw>
-<status status="PASS" start="2025-12-18T18:45:52.241539" elapsed="29.185971"/>
+<status status="PASS" start="2025-12-24T12:22:00.375966" elapsed="0.001598"/>
 </test>
-<status status="PASS" start="2025-12-18T18:45:52.183208" elapsed="29.245976"/>
+<status status="PASS" start="2025-12-24T12:22:00.375081" elapsed="0.003250"/>
 </suite>
-<status status="PASS" start="2025-12-18T18:45:52.182166" elapsed="29.247954"/>
+<status status="PASS" start="2025-12-24T12:22:00.373954" elapsed="0.005366"/>
 </suite>
-<status status="PASS" start="2025-12-18T18:45:52.160643" elapsed="29.270173"/>
+<status status="PASS" start="2025-12-24T12:22:00.352975" elapsed="0.026978"/>
 </suite>
 <statistics>
 <total>
@@ -86,7 +31,7 @@ Without any arguments.</msg>
 <suite>
 <stat name="PythonProject1" id="s1" pass="1" fail="0" skip="0">PythonProject1</stat>
 <stat name="TestCases" id="s1-s1" pass="1" fail="0" skip="0">PythonProject1.TestCases</stat>
-<stat name="ScrollingPage" id="s1-s1-s1" pass="1" fail="0" skip="0">PythonProject1.TestCases.ScrollingPage</stat>
+<stat name="TaggingRobot" id="s1-s1-s1" pass="1" fail="0" skip="0">PythonProject1.TestCases.TaggingRobot</stat>
 </suite>
 </statistics>
 <errors>
