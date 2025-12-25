@@ -4,22 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="880c303a-8bf4-43e3-b30e-a44cb878a560" name="Changes" comment="Scrolling">
-      <change afterPath="$PROJECT_DIR$/Resources/login_resources.robot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestCases/DDT1.robot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestCases/DDT2.robot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestCases/ForLoopDemo.robot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestCases/GetAllLinks.robot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestCases/HtmlTableOperation.robot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestCases/SetupAndTearDown.robot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestCases/TaggingRobot.robot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestData/LoginData.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" />
+    <list default="true" id="880c303a-8bf4-43e3-b30e-a44cb878a560" name="Changes" comment="finalcommit">
+      <change afterPath="$PROJECT_DIR$/PageObjects/Locators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/LoginKeywords.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/RegistrationKeywords.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestCases/LoginTest.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestCases/RegistrationTest.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/log.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/output.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/results/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/results/log.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/results/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/results/output.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/results/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/results/report.html" afterDir="false" />
@@ -65,94 +56,96 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Notification.DisplayName-DoNotAsk-plugins.updated.after.restart": "Plugin updates installed",
-    "Notification.DoNotAsk-plugins.updated.after.restart": "true",
-    "Python.Demo.executor": "Run",
-    "Python.TestDemo.executor": "Run",
-    "Robot Framework.Suite SetupAndTearDown.executor": "Run",
-    "Robot Framework.Suite TaggingRobot.executor": "Run",
-    "Robot Framework.Test Forliip2.executor": "Run",
-    "Robot Framework.Test Forloop1.executor": "Run",
-    "Robot Framework.Test Forloop2.executor": "Run",
-    "Robot Framework.Test Forloop3withList.executor": "Run",
-    "Robot Framework.Test Forloop4.executor": "Run",
-    "Robot Framework.Test Forloop5.executor": "Run",
-    "Robot Framework.Test Forloop6WithExit.executor": "Run",
-    "Robot Framework.Test GetAllLinksTest.executor": "Run",
-    "Robot Framework.Test Invalid Login Test using ${username} ${password}.executor": "Run",
-    "Robot Framework.Test Invalid Login Test using (1).executor": "Run",
-    "Robot Framework.Test Invalid Login Test using.executor": "Run",
-    "Robot Framework.Test Login Test Using Excelsheet.executor": "Run",
-    "Robot Framework.Test LoginTest (1).executor": "Run",
-    "Robot Framework.Test LoginTest.executor": "Run",
-    "Robot Framework.Test LoginTestWithExcel.executor": "Run",
-    "Robot Framework.Test LoginTestwithExcel using ${username} ${password}.executor": "Run",
-    "Robot Framework.Test Navigation Commands.executor": "Run",
-    "Robot Framework.Test Open HomePage (1).executor": "Run",
-    "Robot Framework.Test Open HomePage (2).executor": "Run",
-    "Robot Framework.Test Open HomePage (3).executor": "Run",
-    "Robot Framework.Test Open HomePage.executor": "Run",
-    "Robot Framework.Test Registration Test and verify the waits (1).executor": "Run",
-    "Robot Framework.Test Registration Test and verify the waits (2).executor": "Run",
-    "Robot Framework.Test Registration Test and verify the waits (3).executor": "Run",
-    "Robot Framework.Test Registration Test and verify the waits (4).executor": "Run",
-    "Robot Framework.Test Registration Test and verify the waits (5).executor": "Run",
-    "Robot Framework.Test Registration Test and verify the waits.executor": "Run",
-    "Robot Framework.Test Right username Empty password.executor": "Run",
-    "Robot Framework.Test Right username Wrong password.executor": "Run",
-    "Robot Framework.Test Scrolling Page Validation.executor": "Run",
-    "Robot Framework.Test TC1 Prepaid Recharge (1).executor": "Run",
-    "Robot Framework.Test TC1 Prepaid Recharge.executor": "Run",
-    "Robot Framework.Test TC1 User Registration Test.executor": "Run",
-    "Robot Framework.Test TC2 Login Test.executor": "Run",
-    "Robot Framework.Test Tabbed Window Test.executor": "Run",
-    "Robot Framework.Test Table Validations.executor": "Run",
-    "Robot Framework.Test Testing RadioButtons and CheckBoxes (1).executor": "Run",
-    "Robot Framework.Test Testing RadioButtons and CheckBoxes.executor": "Run",
-    "Robot Framework.Test User Defined Keyword (1).executor": "Run",
-    "Robot Framework.Test User Defined Keyword (2).executor": "Run",
-    "Robot Framework.Test User Defined Keyword (3).executor": "Run",
-    "Robot Framework.Test User Defined Keyword (4).executor": "Run",
-    "Robot Framework.Test User Defined Keyword.executor": "Run",
-    "Robot Framework.Test Validate Multiple window switching.executor": "Run",
-    "Robot Framework.Test Validating DropDowns And Lists.executor": "Run",
-    "Robot Framework.Test Verify InputBox.executor": "Run",
-    "Robot Framework.Test Verify Mouse actions.executor": "Run",
-    "Robot Framework.Test Wrong username Empty password.executor": "Run",
-    "Robot Framework.Test Wrong username Right password.executor": "Run",
-    "Robot Framework.Test Wrong username Wrong password.executor": "Run",
-    "Robot Framework.Test first.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
-    "database.data.extractors.current.id": "Comma-separated (CSV)_id",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/Users/amit/IdeaProjects/PythonProject1/TestData",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Notification.DisplayName-DoNotAsk-plugins.updated.after.restart&quot;: &quot;Plugin updates installed&quot;,
+    &quot;Notification.DoNotAsk-plugins.updated.after.restart&quot;: &quot;true&quot;,
+    &quot;Python.Demo.executor&quot;: &quot;Run&quot;,
+    &quot;Python.TestDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Suite SetupAndTearDown.executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Suite TaggingRobot.executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Test Forliip2.executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Test Forloop1.executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Test Forloop2.executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Test Forloop3withList.executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Test Forloop4.executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Test Forloop5.executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Test Forloop6WithExit.executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Test GetAllLinksTest.executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Test Invalid Login Test using ${username} ${password}.executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Test Invalid Login Test using (1).executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Test Invalid Login Test using.executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Test Login Test Using Excelsheet.executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Test LoginTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Test LoginTest.executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Test LoginTestWithExcel.executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Test LoginTestwithExcel using ${username} ${password}.executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Test Navigation Commands.executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Test Open HomePage (1).executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Test Open HomePage (2).executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Test Open HomePage (3).executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Test Open HomePage.executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Test Registration Test and verify the waits (1).executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Test Registration Test and verify the waits (2).executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Test Registration Test and verify the waits (3).executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Test Registration Test and verify the waits (4).executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Test Registration Test and verify the waits (5).executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Test Registration Test and verify the waits.executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Test Registration Test.executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Test Right username Empty password.executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Test Right username Wrong password.executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Test Scrolling Page Validation.executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Test TC1 Prepaid Recharge (1).executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Test TC1 Prepaid Recharge.executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Test TC1 User Registration Test.executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Test TC2 Login Test.executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Test Tabbed Window Test.executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Test Table Validations.executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Test Testing RadioButtons and CheckBoxes (1).executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Test Testing RadioButtons and CheckBoxes.executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Test User Defined Keyword (1).executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Test User Defined Keyword (2).executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Test User Defined Keyword (3).executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Test User Defined Keyword (4).executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Test User Defined Keyword.executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Test Validate Multiple window switching.executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Test Validating DropDowns And Lists.executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Test Verify InputBox.executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Test Verify Mouse actions.executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Test Wrong username Empty password.executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Test Wrong username Right password.executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Test Wrong username Wrong password.executor&quot;: &quot;Run&quot;,
+    &quot;Robot Framework.Test first.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
+    &quot;database.data.extractors.current.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/amit/IdeaProjects/PythonProject1/TestData&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/TestData" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/TestCases" />
       <recent name="$PROJECT_DIR$/Resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Robot Framework.Test TC2 Login Test">
-    <configuration name="Suite SetupAndTearDown" type="RobotCodeConfigurationType" factoryName="ROBOT_FRAMEWORK_TEST" temporary="true">
+  <component name="RunManager" selected="Robot Framework.Test LoginTest (1)">
+    <configuration name="Test LoginTest (1)" type="RobotCodeConfigurationType" factoryName="ROBOT_FRAMEWORK_TEST" temporary="true">
       <method v="2" />
     </configuration>
-    <configuration name="Suite TaggingRobot" type="RobotCodeConfigurationType" factoryName="ROBOT_FRAMEWORK_TEST" temporary="true">
+    <configuration name="Test LoginTest" type="RobotCodeConfigurationType" factoryName="ROBOT_FRAMEWORK_TEST" temporary="true">
       <method v="2" />
     </configuration>
-    <configuration name="Test TC1 Prepaid Recharge (1)" type="RobotCodeConfigurationType" factoryName="ROBOT_FRAMEWORK_TEST" temporary="true">
+    <configuration name="Test Registration Test" type="RobotCodeConfigurationType" factoryName="ROBOT_FRAMEWORK_TEST" temporary="true">
       <method v="2" />
     </configuration>
     <configuration name="Test TC1 User Registration Test" type="RobotCodeConfigurationType" factoryName="ROBOT_FRAMEWORK_TEST" temporary="true">
@@ -163,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Robot Framework.Test LoginTest (1)" />
+        <item itemvalue="Robot Framework.Test Registration Test" />
+        <item itemvalue="Robot Framework.Test LoginTest" />
         <item itemvalue="Robot Framework.Test TC2 Login Test" />
         <item itemvalue="Robot Framework.Test TC1 User Registration Test" />
-        <item itemvalue="Robot Framework.Suite TaggingRobot" />
-        <item itemvalue="Robot Framework.Suite SetupAndTearDown" />
-        <item itemvalue="Robot Framework.Test TC1 Prepaid Recharge (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -282,7 +275,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766063867450</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="finalcommit">
+      <option name="closed" value="true" />
+      <created>1766560584369</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1766560584369</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -306,6 +307,7 @@
     <MESSAGE value="FramesTesting" />
     <MESSAGE value="Navigations" />
     <MESSAGE value="Scrolling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Scrolling" />
+    <MESSAGE value="finalcommit" />
+    <option name="LAST_COMMIT_MESSAGE" value="finalcommit" />
   </component>
 </project>

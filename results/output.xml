@@ -1,26 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4 (Python 3.14.2 on darwin)" generated="2025-12-24T12:22:00.349840" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4 (Python 3.14.2 on darwin)" generated="2025-12-25T11:26:11.292011" rpa="false" schemaversion="5">
 <suite id="s1" name="PythonProject1" source="/Users/amit/IdeaProjects/PythonProject1">
 <suite id="s1-s1" name="TestCases" source="/Users/amit/IdeaProjects/PythonProject1/TestCases">
-<suite id="s1-s1-s1" name="TaggingRobot" source="/Users/amit/IdeaProjects/PythonProject1/TestCases/TaggingRobot.robot">
-<test id="s1-s1-s1-t1" name="TC2 Login Test" line="11">
-<kw name="Log To Console" owner="BuiltIn">
-<arg>This is user login test</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-12-24T12:22:00.376878" elapsed="0.000324"/>
+<suite id="s1-s1-s1" name="LoginTest" source="/Users/amit/IdeaProjects/PythonProject1/TestCases/LoginTest.robot">
+<test id="s1-s1-s1-t1" name="LoginTest" line="13">
+<kw name="Open My Browser" owner="LoginKeywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-12-25T11:26:11.375036" level="INFO">Opening browser 'headlesschrome' to base url 'https://demo.guru99.com/test/newtours/index.php'.</msg>
+<arg>${SiteUrl}</arg>
+<arg>${Broswer}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-12-25T11:26:11.374808" elapsed="19.862388"/>
 </kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>user login test is over</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-12-24T12:22:00.377311" elapsed="0.000165"/>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-12-25T11:26:31.238168" elapsed="0.024133"/>
 </kw>
-<status status="PASS" start="2025-12-24T12:22:00.375966" elapsed="0.001598"/>
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+<status status="PASS" start="2025-12-25T11:26:11.374002" elapsed="19.888567"/>
+</kw>
+<kw name="Enter UserName" owner="LoginKeywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-25T11:26:31.264003" level="INFO">Typing text 'tutorial' into text field 'name:userName'.</msg>
+<arg>${txt_loginUserName}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-25T11:26:31.263432" elapsed="0.097907"/>
+</kw>
+<arg>${user}</arg>
+<status status="PASS" start="2025-12-25T11:26:31.262913" elapsed="0.098557"/>
+</kw>
+<kw name="Enter Password" owner="LoginKeywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-25T11:26:31.362004" level="INFO">Typing text 'tutorial' into text field 'name:password'.</msg>
+<arg>${txt_loginPassword}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-25T11:26:31.361830" elapsed="0.037203"/>
+</kw>
+<arg>${pwd}</arg>
+<status status="PASS" start="2025-12-25T11:26:31.361595" elapsed="0.037560"/>
+</kw>
+<kw name="Click SignIn" owner="LoginKeywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-12-25T11:26:31.399661" level="INFO">Clicking button 'xpath://input[@name='submit']'.</msg>
+<arg>${btn_signIn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-25T11:26:31.399500" elapsed="0.036288"/>
+</kw>
+<status status="PASS" start="2025-12-25T11:26:31.399276" elapsed="0.036629"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-12-25T11:26:34.438509" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-12-25T11:26:31.436004" elapsed="3.007939"/>
+</kw>
+<kw name="Verify Successful Login" owner="LoginKeywords">
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-12-25T11:26:36.925297" level="INFO">Page title is 'Login: Mercury Tours'.</msg>
+<arg>Login: Mercury Tours</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-12-25T11:26:34.445347" elapsed="2.480106"/>
+</kw>
+<status status="PASS" start="2025-12-25T11:26:34.444460" elapsed="2.481111"/>
+</kw>
+<kw name="Close My Browsers" owner="LoginKeywords">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-12-25T11:26:36.926026" elapsed="0.100261"/>
+</kw>
+<status status="PASS" start="2025-12-25T11:26:36.925704" elapsed="0.100746"/>
+</kw>
+<status status="PASS" start="2025-12-25T11:26:11.373027" elapsed="25.653593"/>
 </test>
-<status status="PASS" start="2025-12-24T12:22:00.375081" elapsed="0.003250"/>
+<status status="PASS" start="2025-12-25T11:26:11.315708" elapsed="25.713104"/>
 </suite>
-<status status="PASS" start="2025-12-24T12:22:00.373954" elapsed="0.005366"/>
+<status status="PASS" start="2025-12-25T11:26:11.314704" elapsed="25.715951"/>
 </suite>
-<status status="PASS" start="2025-12-24T12:22:00.352975" elapsed="0.026978"/>
+<status status="PASS" start="2025-12-25T11:26:11.294996" elapsed="25.736700"/>
 </suite>
 <statistics>
 <total>
@@ -31,7 +90,7 @@
 <suite>
 <stat name="PythonProject1" id="s1" pass="1" fail="0" skip="0">PythonProject1</stat>
 <stat name="TestCases" id="s1-s1" pass="1" fail="0" skip="0">PythonProject1.TestCases</stat>
-<stat name="TaggingRobot" id="s1-s1-s1" pass="1" fail="0" skip="0">PythonProject1.TestCases.TaggingRobot</stat>
+<stat name="LoginTest" id="s1-s1-s1" pass="1" fail="0" skip="0">PythonProject1.TestCases.LoginTest</stat>
 </suite>
 </statistics>
 <errors>
